@@ -16,7 +16,7 @@ const DiaryItem = ({ author, content, created_date, emotion, id }) => {
       onRemove(id);
     }
   };
-  // 수정하다가 취소하고 다시 수정하면 처음에 취소한 그대로 있음
+  // 수정하다가 취소하고 다시 수정하면 처음에 취소한 그대로 있다
   const handleQuitEdit = () => {
     setIsEdit(false);
     setLocalContent(content);
